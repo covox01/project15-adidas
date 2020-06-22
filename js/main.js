@@ -3,7 +3,6 @@ var leafEase = Power3.easeInOut
 var leafEase2 = Power3.easeInOut
 var stripeEase = Sine.easeInOut
 
-
 // function start2(){
 //    var t = .6
 //    var tl = new TimelineMax()
@@ -31,7 +30,7 @@ function start1(){
       .from("#leaf-left", t, {x: 20, rotation: 100, opacity: 0, ease: leafEase}, "sync")
       .to(".leaf", .7, {opacity: 1}, "-=.3")
       .staggerFromTo(".stripes-path", .5, {opacity: 0, y: 15}, {opacity: 1, y: 0, ease: Back.easeOut.config(.5)}, .02, "-=.7")
-      .staggerFromTo(".copy", .5, { opacity: 0, y: 0}, { opacity: 1, y: 0, ease: Power2.easeInOut, onComplete: end}, .04, "-=.8")
+      .staggerFromTo(".copy", .4, { opacity: 0}, { opacity: 1, ease: Power2.easeInOut, onComplete: end}, .04, "-=.8")
 
    gsap.from(".copy", 1, { y: 30, ease: Power3.easeInOut})
    gsap.delayedCall(2.5, end)
