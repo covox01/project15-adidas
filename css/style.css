@@ -1,0 +1,10 @@
+#logo {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   max-width: 500px;
+}
+
+#leaf-left {
+   border: 1px solid red;
+}
